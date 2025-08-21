@@ -38,7 +38,7 @@ Browser modern dengan dukungan CSS variables, ES6, Local Storage API.
 
 Instalasi
 
-Cukup buka index.html di browser.
+Cukup buka index.html di browser. atau download aja aplikasi nya
 
 Struktur File
 
@@ -51,9 +51,6 @@ Kustomisasi
 Tema Warna: Ubah CSS variables di :root.
 
 Animasi Splash Screen: Modifikasi class .splash-char, .splash-scan, .splash-ripple.
-
-
-Dirancang untuk membantu tim sales melacak performa harian dengan antarmuka intuitif dan fungsional lengkap.
 
 
 ---
