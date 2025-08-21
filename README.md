@@ -40,18 +40,5 @@ Instalasi
 
 Cukup buka index.html di browser. atau download aja aplikasi nya
 
-Struktur File
-
-├── index.html
-├── styles.css
-└── app.js
-
-Kustomisasi
-
-Tema Warna: Ubah CSS variables di :root.
-
-Animasi Splash Screen: Modifikasi class .splash-char, .splash-scan, .splash-ripple.
-
-
 ---
 
