@@ -7,9 +7,7 @@ Aplikasi web untuk menghitung dan menganalisis metrik penjualan harian: SPD (Sal
 
 Fitur Utama
 
-Antarmuka: Splash screen animasi, tema gelap/terang, responsif desktop & mobile, format angka otomatis.
-
-Perhitungan: Sales & Struk per shift, AKM, SPD, STD, APC, Growth.
+perhitungan otomatis dan akan mendapatkan output Perhitungan: TOTAL SALES & TOTAL STRUK, AKM, SPD, STD, APC, GROWTH.
 
 Penyimpanan: Auto-save input, pemulihan state, preferensi tema tersimpan lokal.
 
