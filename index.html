@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="theme-color" id="meta-theme-color" content="#000000" />
+  <title>Kalkulator Sales — SPD / STD / APC / Growth</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<!-- Splash screen -->
+<div id="splash">ΚΑΛΚΑΣ</div>
+
+<div class="wrap">
+<div class="wrap">
+  <!-- Left column for inputs -->
+  <div class="card input-section">
+    <h1>Kalkulator Sales</h1>
+    <p class="lead">SPD / STD / APC / Growth</p>
+
+    <form id="form" onsubmit="return false;">
+      <div class="input-group">
+        <h2>Input Harian</h2>
+        <div class="input-row">
+          <div class="input-field">
+            <label for="sales1">Sales Shift 1</label>
+            <input id="sales1" type="number" placeholder="0" />
+          </div>
+          <div class="input-field">
+            <label for="sales2">Sales Shift 2</label>
+            <input id="sales2" type="number" placeholder="0" />
+          </div>
+        </div>
+        <div class="input-row">
+          <div class="input-field">
+            <label for="struk1">Struk Shift 1</label>
+            <input id="struk1" type="number" placeholder="0" />
+          </div>
+          <div class="input-field">
+            <label for="struk2">Struk Shift 2</label>
+            <input id="struk2" type="number" placeholder="0" />
+          </div>
+        </div>
+      </div>
+
+      <div class="input-group">
+        <h2>Input AKM Kemarin</h2>
+        <div class="input-row">
+          <div class="input-field">
+            <label for="akmSalesYesterday">AKM Sales</label>
+            <input id="akmSalesYesterday" type="number" placeholder="0" />
+          </div>
+          <div class="input-field">
+            <label for="akmStrukYesterday">AKM Struk</label>
+            <input id="akmStrukYesterday" type="number" placeholder="0" />
+          </div>
+        </div>
+        <div class="input-field">
+          <label for="days">Jumlah Hari (AKM)</label>
+          <input id="days" type="number" placeholder="1" />
+        </div>
+      </div>
+
+      <div class="input-group">
+        <h2>Growth</h2>
+        <div class="input-row">
+          <div class="input-field">
+            <label for="prevSPD">SPD Sebelumnya</label>
+            <input id="prevSPD" type="number" placeholder="0" />
+          </div>
+          <div class="input-field">
+            <label for="prevSTD">STD Sebelumnya</label>
+            <input id="prevSTD" type="number" placeholder="0" />
+          </div>
+        </div>
+        <div class="input-field">
+          <label for="prevAPC">APC Sebelumnya</label>
+          <input id="prevAPC" type="number" placeholder="0" />
+        </div>
+      </div>
+
+      <div class="actions">
+        <button type="button" id="btnReset" class="secondary">Reset</button>
+        <button type="button" id="btnTheme">Theme</button>
+      </div>
+    </form>
+  </div>
+
+  <!-- Right column for results -->
+  <div class="card result-section">
+    <h2>Ringkasan Hari Ini</h2>
+
+    <div class="summary-card">
+      <div class="summary-header">
+        <span class="icon">💰</span>
+        <h3>Penjualan</h3>
+      </div>
+      <div class="summary-grid">
+        <div class="summary-item"><label>Shift 1</label><span id="outSales1" class="value">-</span></div>
+        <div class="summary-item"><label>Shift 2</label><span id="outSales2" class="value">-</span></div>
+        <div class="summary-item"><label>Total</label><span id="outTotalSales" class="value">-</span></div>
+        <div class="summary-item"><label>AKM</label><span id="outAkmSales" class="value">-</span></div>
+        <div class="summary-item"><label>SPD</label><span id="outSPD" class="value">-</span></div>
+        <div class="summary-item"><label>Growth</label><span id="outGrowthSPD" class="value">-</span></div>
+      </div>
+    </div>
+
+    <div class="summary-card">
+      <div class="summary-header">
+        <span class="icon">🧾</span>
+        <h3>Struk</h3>
+      </div>
+      <div class="summary-grid">
+        <div class="summary-item"><label>Shift 1</label><span id="outStruk1" class="value">-</span></div>
+        <div class="summary-item"><label>Shift 2</label><span id="outStruk2" class="value">-</span></div>
+        <div class="summary-item"><label>Total</label><span id="outTotalStruk" class="value">-</span></div>
+        <div class="summary-item"><label>AKM</label><span id="outAkmStruk" class="value">-</span></div>
+        <div class="summary-item"><label>STD</label><span id="outSTD" class="value">-</span></div>
+        <div class="summary-item"><label>Growth</label><span id="outGrowthSTD" class="value">-</span></div>
+      </div>
+    </div>
+
+    <div class="summary-card">
+      <div class="summary-header">
+        <span class="icon">📊</span>
+        <h3>APC</h3>
+      </div>
+      <div class="summary-grid cols-2">
+        <div class="summary-item"><label>APC</label><span id="outAPC" class="value">-</span></div>
+        <div class="summary-item"><label>Growth</label><span id="outGrowthAPC" class="value">-</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
